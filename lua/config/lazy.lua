@@ -65,4 +65,4 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.keymap.set('n', '<leader>ee', vim.diagnostic.open_float)
 
 -- nvim-tree
-vim.keymap.set('n', '<leader>ft', ":NvimTreeToggle<CR>", { desc = 'NvimTreeToggle' })
+vim.keymap.set('n', '<leader>fe', ":NvimTreeToggle<CR>", { desc = 'NvimTreeToggle' })
