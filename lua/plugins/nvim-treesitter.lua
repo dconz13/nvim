@@ -13,7 +13,11 @@ return {
 			'vim',
 			'yaml',
 			'xml',
-			'bash'
+			'bash',
+			'typescript',
+			'javascript',
+			'dockerfile',
+			'html'
 		}
 	end,
 }

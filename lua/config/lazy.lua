@@ -14,6 +14,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 
+local is_mac = vim.fn.has("macunix") == 1
+if not is_mac then
+	vim.g.clipboard = "wl-copy"
+end
+
 vim.opt.rtp:prepend(lazypath)
 -- Set line numbers
 vim.opt.number = true
@@ -34,7 +39,6 @@ vim.opt.mouse = 'a'
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.g.clipboard = "wl-copy"
 
 -- Setup lazy.nvim
 require("lazy").setup({
